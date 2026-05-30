@@ -15,7 +15,7 @@ A production-grade bash script that provisions a complete OpenLiteSpeed web stac
 
 ## Why OpenLiteSpeed + LSAPI
 
-Unlike Nginx or Apache which delegate PHP execution to a separate PHP-FPM process pool over a socket, OpenLiteSpeed handles PHP natively via LSAPI (LiteSpeed Server Application Programming Interface). PHP workers run as direct extensions of the web server, communicating through shared memory rather than inter-process sockets. This eliminates the IPC overhead present in traditional Nginx + PHP-FPM setups and results in significantly faster PHP execution — particularly under high concurrency WordPress and WooCommerce workloads.
+Unlike Nginx or Apache which delegate PHP execution to a separate PHP-FPM process pool over a socket, OpenLiteSpeed handles PHP natively via LSAPI (LiteSpeed Server Application Programming Interface). PHP workers run as direct extensions of the web server, communicating through shared memory rather than inter-process sockets. This eliminates the IPC overhead present in traditional Nginx + PHP-FPM setups and results in significantly faster PHP execution. Particularly under high concurrency WordPress and WooCommerce workloads.
 
 ## What the script does
 
